@@ -68,9 +68,9 @@ public class FindLeadPage extends ProjectMethods {
 	@FindBy(how = How.XPATH, using = "(//span[@class= 'x-tab-strip-text '])[2]")
 	private WebElement eleph;
 	
-	public FindLeadPage typePhoneNumber(String data)
+	public FindLeadPage clickPhoneNumber()
 	{
-		type(eleph, data);
+		click(eleph);
 		return this;
 	}
 	
@@ -134,7 +134,7 @@ public class FindLeadPage extends ProjectMethods {
 		return new ViewLead();
 	}
 	
-	@FindBy(how = How.XPATH, using = "(//div[@class = 'x-grid3-cell-inner x-grid3-col-partyId'])[1]/a")
+	@FindBy(how = How.XPATH, using = "//div[@class = 'x-paging-info']")
 	private WebElement eleVerifyText;
 	
 	public String typeVerifyText(String data)

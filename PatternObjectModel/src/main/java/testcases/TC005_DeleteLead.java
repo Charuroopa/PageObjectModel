@@ -31,8 +31,8 @@ public class TC005_DeleteLead extends ProjectMethods{
 		.typeGetText();
 		 new FindLeadPage()
 		 .clickFirstIndex().clickDelete().clickFindLead().typeLeadId(text)
-		 .clickFindLeadsbtn();
-		 //.typeVerifyText(Vtext);
+		 .clickFindLeadsbtn()
+		 .typeVerifyText(Vtext);
 		 
 		 System.out.println(typeGetIndex);
 	}

@@ -36,9 +36,7 @@ public class TC007_MergeLead extends ProjectMethods{
 		 new MergeLeads().clickToLead().typeMFName(LName).clickMFind().clickMFElement()
 		 .clickMergeBtn();
 		 
-		 new MyLeads().clickFindLead().typeLeadId(text).clickFindLeadsbtn();
-		 
-		 //.typeVerifyText(vText);
+		 new MyLeads().clickFindLead().typeLeadId(text).clickFindLeadsbtn().typeVerifyText(vText);
 		 
 		 System.out.println(typeGetText);
 	}
