@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose = "5">
+<groups>
+<run>
+<!-- <include name="smoke"></include>
+<include name="sanity"></include> 
+ -->
+ <!-- <include name="s.*"></include>
+ <include name="regression"></include>
+<include name="All"></include> -->
+<exclude name="regression"></exclude>
+</run>
+</groups>
+  <test name="Test">
+    <classes>
+      <class name="week4.day1.DeleteLeadsUsingJUtil"/>
+      <class name="week4.day1.EditLeadUsingJunit"/>
+      <class name="week4.day1.CreateLeadUsingJUtil"/>
+      <class name="week4.day1.MergeLeadsUsingJUtil"/>
+      <class name="week4.day1.DuplicateLeadUsingJUtil"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
